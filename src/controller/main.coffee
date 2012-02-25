@@ -10,12 +10,21 @@ Ext.define 'App.controller.main',
         selector: 'panel > #nameInput'
       nameOutput:
         selector: 'panel > #nameOutput'
+      userList:
+        selector: 'panel > list'
 
   init: ->
     this.control
       '#showName':
         tap: this.showNameClick
-
-  showNameClick: ->
-    name = this.getNameInput().getValue()
-    this.getNameOutput().setHtml("Hello #{name}")
+    usersStore = this.getUsersStore()
+    debugger
+    usersStore.load
+      callback: this.onUsersLoad
+      scope: this
+    showNameClick: ->
+      name = this.getNameInput().getValue()
+      this.getNameOutput().setHtml("Hello #{name}")
+      
+  onUsersLoad: () ->
+    usersList = this.getUserList()
