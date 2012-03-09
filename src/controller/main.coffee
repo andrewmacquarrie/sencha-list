@@ -18,7 +18,6 @@ Ext.define 'App.controller.main',
     this.control
       '#showName':
         tap: () ->
-          debugger
           name = this.getNameInput().getValue()
           noout = this.getNameOutput()
           noout.setHtml("Hello #{name}")
