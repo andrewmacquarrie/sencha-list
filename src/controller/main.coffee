@@ -17,14 +17,15 @@ Ext.define 'App.controller.main',
   init: ->
     this.control
       '#showName':
-        tap: this.showNameClick
+        tap: () ->
+          debugger
+          name = this.getNameInput().getValue()
+          noout = this.getNameOutput()
+          noout.setHtml("Hello #{name}")
     usersStore = this.getUsersStore()
     usersStore.load
       callback: this.onUsersLoad
       scope: this
-    showNameClick: ->
-      name = this.getNameInput().getValue()
-      this.getNameOutput().setHtml("Hello #{name}")
-      
+
   onUsersLoad: () ->
     usersList = this.getUserList()
