@@ -4,6 +4,7 @@ Ext.define 'App.controller.main',
     'MainForm'
     'NameDisplay'
   ]
+  stores: ['Users']
   config:
     refs:
       nameInput:
@@ -18,7 +19,6 @@ Ext.define 'App.controller.main',
       '#showName':
         tap: this.showNameClick
     usersStore = this.getUsersStore()
-    debugger
     usersStore.load
       callback: this.onUsersLoad
       scope: this
