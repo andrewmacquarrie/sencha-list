@@ -4,9 +4,3 @@ Ext.define 'App.store.Users',
   config:
     model: 'App.model.User'
     autoLoad: true
-    proxy:
-      type: 'ajax'
-      url: 'stuff.json'
-      reader:
-        type: 'json'
-        root: 'results'
