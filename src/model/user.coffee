@@ -1,3 +1,10 @@
 Ext.define 'App.model.User',
   extend: 'Ext.data.Model'
-  fields: ['id', 'name']
+  config:
+    fields: ['id', 'name']
+    proxy:
+      type: 'ajax'
+      url: 'stuff.json'
+      reader:
+        type: 'json'
+        rootProperty: 'results'
