@@ -26,5 +26,6 @@ Ext.define 'App.controller.main',
       callback: this.onUsersLoad
       scope: this
 
-  onUsersLoad: () ->
+  onUsersLoad: (users) ->
+    debugger
     usersList = this.getUserList()

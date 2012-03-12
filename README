@@ -2,7 +2,7 @@ Sencha Touch experiment with source and list.
 
 
 To compile the coffeeScript into javascript, run
-  > coffee -o app -c src
+  > coffee -o app -cb src
 
 During development, it's a good idea to have coffeescript continually compiling into javascript by watching the coffeescript files for changes:
-  > coffee -o app -c -w src
+  > coffee -o app -cbw src
