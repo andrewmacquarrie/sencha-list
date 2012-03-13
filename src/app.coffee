@@ -2,7 +2,6 @@ Ext.Loader.setConfig {enabled:true}
 Ext.application
     name: 'App'
     controllers: ['main']
-    stores: ['Users']
     launch: () ->
       panel = Ext.create 'Ext.Panel',
         fullscreen: true,
