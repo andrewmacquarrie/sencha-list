@@ -1,13 +1,10 @@
-Ext.define 'App.view.MainForm',
+Ext.define 'App.view.mainForm',
   extend: 'Ext.form.Panel'
   alias: 'widget.mainForm',
   config:
     items: [
-      xtype: 'textfield'
-      label: 'Name'
-      id: 'nameInput'
-    ,
-      xtype: 'button'
-      text: 'show'
-      id: 'showName'
+      xtype: 'list'
+      itemTpl: '<div class="contact">{name}</div>'
+      id: 'userList'
+      store: 'Users'
     ]

@@ -9,5 +9,4 @@ Ext.application
           type: 'hbox'
         items: [
           { xtype: 'mainForm', flex: 1 }
-          { xtype: 'nameDisplay', flex: 1 }
         ]
