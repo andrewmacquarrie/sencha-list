@@ -16,5 +16,5 @@ Ext.define 'App.controller.main',
       callback: this.onUsersLoad
 
   onUsersLoad: (users) ->
-    debugger
+    alert(users.length)
 
