@@ -1,8 +1,13 @@
 Sencha Touch experiment with source and list.
 
+This example is in coffeescript.
 
-To compile the coffeeScript into javascript, run
+To get the example working you need to download the Sencha Touch 2 SDK, rename the folder to "touch" and place it in the root of the project.
+
+To compile the coffeescript into javascript, run
   > coffee -o app -cb src
 
 During development, it's a good idea to have coffeescript continually compiling into javascript by watching the coffeescript files for changes:
   > coffee -o app -cbw src
+  
+I use bare compilation which removes the top level function wrapper.

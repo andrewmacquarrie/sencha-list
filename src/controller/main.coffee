@@ -17,4 +17,3 @@ Ext.define 'App.controller.main',
 
   onUsersLoad: (users) ->
     alert(users.length)
-
