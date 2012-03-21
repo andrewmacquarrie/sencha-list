@@ -8,5 +8,9 @@ Ext.application
         layout:
           type: 'hbox'
         items: [
-          { xtype: 'mainForm', flex: 1 }
+          xtype: 'list'
+          itemTpl: '<div class="contact">{name}</div>'
+          id: 'userList'
+          store: 'Users'
+          flex: 1
         ]

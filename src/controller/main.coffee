@@ -1,8 +1,5 @@
 Ext.define 'App.controller.main',
   extend: 'Ext.app.Controller'
-  views: [
-    'mainForm'
-  ]
   stores: [
     'Users'
   ]
